@@ -1,0 +1,15 @@
+{
+  "name": "get-geo",
+  "version": "1.0.0",
+  "description": "Polygon geo coordinates retrival tool. Make it easy to get multiple coordinates by drawing in the map",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Gustavo L. M. de Oliveira -> lmo.gustavo@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "@googlemaps/js-api-loader": "^1.15.2"
+  }
+}

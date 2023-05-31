@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;500&display=swap');
+/* font-family: 'MuseoModerno', cursive; */
+
+html,
+body {
+  background: rgb(177, 194, 192);
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 100;
+  color: rgb(0, 0, 0);
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  background: rgb(243, 243, 243);
+  border-radius: 4px;
+  height: 80px;
+  padding-bottom: 8px;
+  margin: 16px 40px 20px;
+}
+
+.main-title,
+.sub-title {
+  color: rgb(111, 130, 128);
+  line-height: 28px;
+  margin: 0;
+}
+
+.main-title {
+  font-family: 'MuseoModerno', cursive;
+  font-weight: 500;
+}
+
+.sub-title {
+  font-family: 'MuseoModerno', cursive;
+  font-weight: 200;
+}
+
+.coordinates {
+  color: rgb(111, 130, 128);
+  font-family: 'MuseoModerno', cursive;
+  border-bottom: 1px solid rgb(111, 130, 128);
+  font-weight: 500;
+  font-size: 16px;
+  margin: 8px 0 0 0;
+}
+
+.input-field {
+  border: none;
+  border-radius: 4px;
+  box-shadow: inset 0.4px 0.4px 2px;
+  line-height: 16px;
+}
+
+.input-button {
+  border: none;
+  border-radius: 4px;
+  line-height: 16px;
+  background: rgb(204, 210, 210);
+  color: rgb(111, 130, 128);
+}
+
+.input-button:hover {
+  background: rgb(111, 130, 128);
+  color: rgb(204, 210, 210);
+}
+
+.input-button:active {
+  background: rgb(111, 130, 128);
+  color: rgb(255, 255, 255);
+}
+
+#map {
+  height: 80%;
+  margin: 16px 40px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 8px rgb(46, 46, 46);
+}
+
+.results-box {
+  margin: 40px;
+  padding: 16px;
+  background-color: rgb(243, 243, 243);
+  min-height: 400px;
+  max-height: 400px;
+  border-radius: 4px;
+  overflow-y: auto;
+}
+
+.coord-results {
+  font-size: 12px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.bottom-bar {
+  height: 16px;
+}
+
+@media (min-width: 1200px) {
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-evenly;
+    align-items: center;
+  }
+
+  .main-header {
+    height: 80px;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  #map {
+    max-height: 600px;
+    height: 70vh;
+    width: 60%;
+    margin: 0 0 0 40px;
+  }
+
+  .results-box {
+    width: 30%;
+    height: 70vh;
+    max-height: 600px;
+    margin: 0 40px 0 0;
+    overflow-y: auto;
+  }
+
+  .bottom {
+    display: none;
+  }
+}

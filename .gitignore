@@ -1,0 +1,6 @@
+out/
+.tzap-data/
+.tzapignore
+.tzapinclude
+key.txt
+node_modules/
